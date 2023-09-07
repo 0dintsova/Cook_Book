@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="16dp"
+    android:layout_marginBottom="16dp"
+    app:cardCornerRadius="26dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/recipeImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/rectangl2" />
+
+        <CheckBox
+            android:id="@+id/icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:alpha="1"
+            android:button="@drawable/sl_favourite"
+            android:translationZ="90dp"
+            app:buttonTint="@android:color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/nameRecipe"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="8dp"
+            android:translationZ="90dp"
+            android:paddingTop="32dp"
+            android:text="Egg"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/recipeImage"
+            app:layout_constraintEnd_toEndOf="@+id/recipeImage"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/recipeImage"
+            app:layout_constraintTop_toTopOf="@+id/recipeImage"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <ImageView
+            android:id="@+id/ellipse"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="60dp"
+            android:alpha="0.75"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="@+id/recipeImage"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/recipeImage"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0"
+            app:srcCompat="@drawable/ellipse" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

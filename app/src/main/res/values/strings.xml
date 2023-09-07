@@ -1,0 +1,30 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">SummerProject</string>
+    <string name="menu_home">Home</string>
+    <string name="menu_profile">Profile</string>
+    <string name="menu_all_list">All recipes</string>
+    <string name="menu_saved">Saved</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_main2">MainActivity2</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+    <string name="likes" tools:ignore="ExtraTranslation">Likes</string>
+    <string name="recipes">Recipes</string>
+    <string name="you_are_not"> You are not yet registered</string>
+    <string name="Breakfast">Breakfast</string>
+    <string name="Lunch">Lunch</string>
+    <string name="Dinner">Dinner</string>
+    <string name="Snacks">Snacks</string>
+    <string name="Salads">Salads</string>
+    <string name="Desserts">Desserts</string>
+    <string name="Drinks">Drinks</string>
+    <string name="ingredients">Ingredients</string>
+    <string name="cooking_instruction">Cooking instruction</string>
+</resources>
+
+
+
+

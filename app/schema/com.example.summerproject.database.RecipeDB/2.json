@@ -1,0 +1,125 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 2,
+    "identityHash": "c555bcb362c2fbd51ff2a313dee5c4cf",
+    "entities": [
+      {
+        "tableName": "recipes",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER PRIMARY KEY AUTOINCREMENT, `Name` TEXT NOT NULL, `Image` INTEGER NOT NULL, `Steps` TEXT NOT NULL, `Calories` REAL NOT NULL DEFAULT 0, `Protein` REAL NOT NULL DEFAULT 0, `Fats` REAL NOT NULL DEFAULT 0, `Carbohydrates` REAL NOT NULL DEFAULT 0, `MealTimeFilter` TEXT NOT NULL DEFAULT '')",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "recipeName",
+            "columnName": "Name",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "image",
+            "columnName": "Image",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "text",
+            "columnName": "Steps",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "calories",
+            "columnName": "Calories",
+            "affinity": "REAL",
+            "notNull": true,
+            "defaultValue": "0"
+          },
+          {
+            "fieldPath": "protein",
+            "columnName": "Protein",
+            "affinity": "REAL",
+            "notNull": true,
+            "defaultValue": "0"
+          },
+          {
+            "fieldPath": "fats",
+            "columnName": "Fats",
+            "affinity": "REAL",
+            "notNull": true,
+            "defaultValue": "0"
+          },
+          {
+            "fieldPath": "carbohydrates",
+            "columnName": "Carbohydrates",
+            "affinity": "REAL",
+            "notNull": true,
+            "defaultValue": "0"
+          },
+          {
+            "fieldPath": "mealTimeFilter",
+            "columnName": "MealTimeFilter",
+            "affinity": "TEXT",
+            "notNull": true,
+            "defaultValue": "''"
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": true,
+          "columnNames": [
+            "id"
+          ]
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "Ingedients",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER PRIMARY KEY AUTOINCREMENT, `Name` TEXT NOT NULL, `Count` REAL NOT NULL, `ListId` INTEGER NOT NULL)",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "name",
+            "columnName": "Name",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "count",
+            "columnName": "Count",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "listId",
+            "columnName": "ListId",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": true,
+          "columnNames": [
+            "id"
+          ]
+        },
+        "indices": [],
+        "foreignKeys": []
+      }
+    ],
+    "views": [],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, 'c555bcb362c2fbd51ff2a313dee5c4cf')"
+    ]
+  }
+}

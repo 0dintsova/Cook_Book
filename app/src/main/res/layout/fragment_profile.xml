@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.ProfileFragment">
+
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+
+        app:srcCompat="@drawable/ic_profile_24dp" />
+
+    <TextView
+        android:id="@+id/you_are_not"
+        android:layout_width="360dp"
+        android:layout_height="78dp"
+        android:textSize="32sp"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#807EA00E"
+        android:layout_marginTop="446dp"
+        android:text="@string/you_are_not"
+        android:gravity="center_horizontal|top"
+        />
+
+
+</FrameLayout>
